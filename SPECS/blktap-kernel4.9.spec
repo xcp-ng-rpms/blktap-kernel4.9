@@ -1,7 +1,7 @@
 Summary: blktap user space utilities
 Name: blktap-kernel4.9
 Version: 3.12.0
-Release: 1.0.1.xcp
+Release: 1.0.156.1.xcp
 License: BSD
 Group: System/Hypervisor
 URL: https://github.com/xapi-project/blktap
@@ -13,7 +13,7 @@ Provides: blktap
 Obsoletes: xen-blktap
 BuildRequires: e2fsprogs-devel, libaio-devel, systemd, autogen, autoconf, automake, libtool, libuuid-devel
 BuildRequires: xen-devel, xen-dom0-libs-devel, zlib-devel, xen-libs-devel, libcmocka-devel, lcov, git
-BuildRequires: kernel-exp-headers = 4.9.135
+BuildRequires: kernel-exp-headers = 4.9
 Requires(post): systemd
 Requires(post): /sbin/ldconfig
 Requires(preun): systemd
@@ -129,6 +129,9 @@ fi
 %posttrans -p /sbin/ldconfig
 
 %changelog
+* Wed Feb 13 2019 Samuel Verschelde <stormi-xcp@ylix.fr> - 3.12.0-1.0.156.1.xcp
+- Rebuild for kernel-exp 4.9-156
+
 * Wed Oct 24 2018 Rushikesh Jadhav <rushikesh7@gmail.com> - 3.12.0-1.0.1.xcp
 - Provides blktap
 
