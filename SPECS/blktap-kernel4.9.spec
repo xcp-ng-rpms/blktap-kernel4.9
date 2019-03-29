@@ -1,7 +1,7 @@
 Summary: blktap user space utilities
 Name: blktap-kernel4.9
 Version: 3.12.0
-Release: 1.0.156.1.xcp
+Release: 1.0.156.1%{dist}
 License: BSD
 Group: System/Hypervisor
 URL: https://github.com/xapi-project/blktap
